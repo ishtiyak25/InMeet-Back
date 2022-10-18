@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "corsheaders",
     "import_export",
+    "drf_spectacular",
 ]
 AUTH_USER_MODEL = 'user.User'
 IMPORT_EXPORT_USE_TRANSACTIONS = True
@@ -128,8 +129,15 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
-
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'InMeet Manager API Repo',
+    'DESCRIPTION': 'InMeet - Task & Meeting Management Application',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
+}
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = [

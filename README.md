@@ -24,6 +24,7 @@ rest_framework_simplejwt
 corsheaders
 import_export
 whitenoise
+drf-spectacular
 ```
 
 ## Run

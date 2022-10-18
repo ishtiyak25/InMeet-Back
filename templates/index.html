@@ -36,30 +36,15 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/admin">Admin</a>
+                            <a class="nav-link" aria-current="page" href="/admin">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="api/schema/swagger-ui/">Swagger Documentation</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="api/schema/redoc/">Redoc Documentation</a>
                         </li>
                     </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -70,16 +55,21 @@
             <h3 class="text-center text-success" style="margin-top: 80px">
                 Welcome to InMeet APIs & Admin Panel!
             </h3>
-            <ul
-                    class="list-group list-group-horizontal d-flex justify-content-center mt-5"
-            >
-                <a href="/admin/" class="btn btn-none">
-                    <li class="list-group-item">Admin Panel</li>
+
+            <section class="d-flex justify-content-center mt-5">
+                <a href="/admin" class="btn btn-outline-secondary " style="margin-right: 10px">Admin
+                    Panel</a>
+                <a href="api/schema/swagger-ui/" class="btn btn-outline-secondary ">API Documentation</a>
+            </section>
+
+            <!-- <ul class="list-group list-group-horizontal d-flex justify-content-center mt-5">
+                <a href="/admin" class="btn btn-outline-secondary">
+                    <li class="">Admin Panel</li>
                 </a>
-                <a href="/docs" class="btn btn-none">
-                    <li class="list-group-item">API Documentation</li>
+                <a href="/api/schema/swagger-ui" class="btn btn-outline-secondary">
+                    <li class="">API Documentation</li>
                 </a>
-            </ul>
+            </ul> -->
         </div>
         <div class="col" style="margin-top: 50px">
             <img src="https://static.vecteezy.com/system/resources/previews/005/948/644/large_2x/diverse-business-people-meeting-at-boardroom-table-concept-free-vector.jpg"
