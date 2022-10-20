@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "import_export",
     "drf_spectacular",
+    "meeting",
 ]
 AUTH_USER_MODEL = 'user.User'
 IMPORT_EXPORT_USE_TRANSACTIONS = True
