@@ -25,6 +25,7 @@ corsheaders
 import_export
 whitenoise
 drf-spectacular
+pytest
 ```
 
 ## Run
