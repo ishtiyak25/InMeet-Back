@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = os.environ.get("SECRET_KEY")
 SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = os.environ.get("DEBUG", False)
+# DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = ['*']
 
@@ -137,6 +137,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'InMeet - Task & Meeting Management Application',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+    'COMPONENT_SPLIT_REQUEST': True
     # OTHER SETTINGS
 }
 CORS_ORIGIN_ALLOW_ALL = True
@@ -162,3 +163,7 @@ CORS_ALLOW_HEADERS = [
     "x-requested-with",
 ]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+"""
+Bellow section will be used as configuration of email send/receive
+"""
+EMAIL_SENDER = "admin@admin.com"
